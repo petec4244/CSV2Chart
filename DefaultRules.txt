@@ -1,0 +1,41 @@
+#This is a Rule file for CSV2Chart
+#Must contain: [HeaderLoc], [SkipLines], [Highlight List], [Selected Columns], [END]
+
+#Location of the Column Headers
+#Remember lines begin with 0 and not 1 like it appears in excel
+[HeaderLoc]
+0
+
+#lines to skip
+[SkipLines]
+2
+
+#Specific Column Name to filter for 
+# A '*' is any other value not given, or default
+[Selected Columns]
+*
+
+#This is expected values followed by color to use
+###Eg. False|Red = any entries that are "False" will appear red
+#
+#Notes:
+# 	A '*' is any other value not given, or default
+#	Entries are case sensitive
+#	Entries must be separated with a 'pipe': |
+#Acceptable Colors: Red, Green, Yellow, Blue, Orange, Pink, Fuchsia, Black, 
+#	Magenta, Aquamarine, OliveDrab, Grey, Lavender, Khaki, LimeGreen, Navy, 
+#	SteelBlue, YellowGreen
+
+[Highlight List]
+*|White
+true|Green
+True|Green
+TRUE|Green
+1|Green
+False|Red
+false|Red
+FALSE|Red
+0|Red
+
+#No Values after [END]
+[END]
